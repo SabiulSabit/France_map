@@ -1,124 +1,151 @@
-body{
-    background-color:  #DCE6DB;
-
+body {
+  background-color: #DCE6DB;
 }
 
-.map{
+.map {
   overflow: hidden;
-
 }
 
-.map__image{
+.map__image {
   width: 60%;
   float: right;
-  background-color:  #DCE6DB;
-
+  background-color: #DCE6DB;
+  height: 95vh;
 }
 
-.map__image path{
+.map__image path {
   fill: #EBEBEB;
-  stroke : white;
+  stroke: white;
   stroke-width: 2px;
   transition: fill 0.2s;
 }
 
-.map__image .is-active path{
+.map__image .is-active path {
   fill: url(#gradient-horizontal);
 }
 
-.map__list{
+.map__list {
   float: left;
   width: 40%;
-  margin-top:100px;
+  margin-top: 50px;
 }
 
-
-.map__list a{
+.map__list a {
   color: inherit;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.map__list a.is-active{
+.map__list a.is-active {
   padding: 2px;
   fill: #EBEBEB;
   font-weight: bold;
-  radius: 80%;
-
+  border-radius: 80%;
 }
 
-.map__list #tag-Grand-Est.is-active{
-
+.map__list #tag-Grand-Est.is-active {
   fill: #EBEBEB;
   font-weight: bold;
   background-color: #FED650;
 }
-.map__list #tag-Nouvelle-Aquitaine.is-active{
 
+.map__list #tag-Nouvelle-Aquitaine.is-active {
   fill: #EBEBEB;
   font-weight: bold;
   background-color: #FED650;
 }
-.map__list #tag-Auvergne-Rhone-Alpes.is-active{
 
+.map__list #tag-Auvergne-Rhone-Alpes.is-active {
   fill: #EBEBEB;
   font-weight: bold;
   background-color: #FED650;
 }
-.map__list #tag-Bourgogne-Franche-Comte.is-active{
 
+.map__list #tag-Bourgogne-Franche-Comte.is-active {
   fill: #EBEBEB;
   font-weight: bold;
   background-color: #FED650;
 }
-.map__list #tag-Bretagne.is-active{
 
+.map__list #tag-Bretagne.is-active {
   fill: #EBEBEB;
   font-weight: bold;
   background-color: #FED650;
 }
-.map__list #tag-Centre-Val-de-Loire.is-active{
 
+.map__list #tag-Centre-Val-de-Loire.is-active {
   fill: #EBEBEB;
   font-weight: bold;
   background-color: #FED650;
 }
-.map__list #tag-Corse.is-active{
 
+.map__list #tag-Corse.is-active {
   fill: #EBEBEB;
   font-weight: bold;
   background-color: #FED650;
 }
-.map__list #tag-Ile-de-France.is-active{
 
+.map__list #tag-Ile-de-France.is-active {
   fill: #EBEBEB;
   font-weight: bold;
   background-color: #FED650;
 }
-.map__list #tag-Occitanie.is-active{
 
+.map__list #tag-Occitanie.is-active {
   fill: #EBEBEB;
   font-weight: bold;
   background-color: #FED650;
 }
-.map__list #tag-Haut-de-France.is-active{
 
+.map__list #tag-Haut-de-France.is-active {
   fill: #EBEBEB;
   font-weight: bold;
   background-color: #FED650;
 }
-.map__list #tag-Normandie.is-active{
 
+.map__list #tag-Normandie.is-active {
   fill: #EBEBEB;
   font-weight: bold;
   background-color: #FED650;
 }
-.map__list #tag-Pays-de-la-Loire.is-active{
+
+.map__list #tag-Pays-de-la-Loire.is-active {
   fill: #EBEBEB;
   font-weight: bold;
   background-color: #FED650;
 }
-.map__list #tag-Provence-Alpes-Cote-dazur.is-active{
+
+.map__list #tag-Provence-Alpes-Cote-dazur.is-active {
+  fill: #EBEBEB;
+  font-weight: bold;
+  background-color: #FED650;
+}
+
+.map__list #tag-Guadeloupe.is-active {
+  fill: #EBEBEB;
+  font-weight: bold;
+  background-color: #FED650;
+}
+
+.map__list #tag-Guyanne.is-active {
+  fill: #EBEBEB;
+  font-weight: bold;
+  background-color: #FED650;
+}
+
+.map__list #tag-Martinique.is-active {
+  fill: #EBEBEB;
+  font-weight: bold;
+  background-color: #FED650;
+}
+
+.map__list #tag-Mayotte.is-active {
+  fill: #EBEBEB;
+  font-weight: bold;
+  background-color: #FED650;
+}
+
+.map__list #tag-Réunion.is-active {
   fill: #EBEBEB;
   font-weight: bold;
   background-color: #FED650;
@@ -128,86 +155,128 @@ body{
   --color-stop-1: #45AC34;
   --color-stop-2: #53C3EB;
 }
-#b-Grand-Est.is-active{
-    width: 250px;
-    border-radius: 25px;
-    background-color: whitesmoke;
-}
-#b-Nouvelle-Aquitaine.is-active{
-  width: 250px;
-    border-radius: 25px;
-    background-color: whitesmoke;
-}
 
-#b-Auvergne-Rhone-Alpes.is-active{
-  width: 250px;
-  border-radius: 25px;
-  background-color: whitesmoke;
-}
-#b-Bourgogne-Franche-Comte.is-active{
-  width: 250px;
-  border-radius: 25px;
-  background-color: whitesmoke;
-}
-#b-Bretagne.is-active{
-  width: 250px;
-  border-radius: 25px;
-  background-color: whitesmoke;
-}
-#b-Centre-Val-de-Loire.is-active{
-  width: 250px;
-  border-radius: 25px;
-  background-color: whitesmoke;
-}
-#b-Corse.is-active{
-  width: 250px;
-  border-radius: 25px;
-  background-color: whitesmoke;
-}
-#b-Ile-de-France.is-active{
-  width: 250px;
-  border-radius: 25px;
-  background-color: whitesmoke;
-}
-#b-Occitanie.is-active{
-  width: 250px;
-  border-radius: 25px;
-  background-color: whitesmoke;
-}
-#b-Haut-de-France.is-active{
-  width: 250px;
-  border-radius: 25px;
-  background-color: whitesmoke;
-}
-#b-Normandie.is-active{
-  width: 250px;
-  border-radius: 25px;
-  background-color: whitesmoke;
-}
-#b-Pays-de-la-Loire.is-active{
-  width: 250px;
-  border-radius: 25px;
-  background-color: whitesmoke;
-}
-#b-Provence-Alpes-Cote-dazur.is-active{
-  width: 250px;
-  border-radius: 25px;
-  background-color: whitesmoke;
-}
-#b-Grand-Est.is-active{
+#b-Grand-Est.is-active {
   width: 250px;
   border-radius: 25px;
   background-color: whitesmoke;
 }
 
+#b-Nouvelle-Aquitaine.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
 
-#Calque_1{
+#b-Auvergne-Rhone-Alpes.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Bourgogne-Franche-Comte.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Bretagne.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Centre-Val-de-Loire.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Corse.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Ile-de-France.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Occitanie.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Haut-de-France.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Normandie.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Pays-de-la-Loire.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Provence-Alpes-Cote-dazur.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Grand-Est.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Guadeloupe.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Guyanne.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Martinique.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Mayotte.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#b-Réunion.is-active {
+  width: 250px;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+
+#Calque_1 {
   filter: drop-shadow( -5px 3px 0px rgba(200, 200, 200, 0.5)) drop-shadow( -10px 5px 3px rgba(0, 0, 0, 0.5));
-
 }
 
 
 /* The container */
+
 .container {
   display: block;
   position: relative;
@@ -219,14 +288,18 @@ body{
   padding: 5px 10px;
 }
 
+
 /* Hide the browser's default radio button */
+
 .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
+
 /* Create a custom radio button */
+
 .checkmark {
   position: absolute;
   top: 0;
@@ -234,90 +307,152 @@ body{
   height: 25px;
   width: 25px;
   background-color: #eee;
-
 }
 
+
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+
+.container:hover input~.checkmark {
   background-color: #ccc;
 }
 
+
 /* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
+
+.container input:checked~.checkmark {
   background-color: #2196F3;
 }
 
+
 /* Create the indicator (the dot/circle - hidden when not checked) */
+
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
+
 /* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
+
+.container input:checked~.checkmark:after {
   display: block;
 }
 
+
 /* Style the indicator (dot/circle) */
+
 .container .checkmark:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: white;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
-#a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8,#a9,#a10,#a11,#a12,#a13 {
+#a1,
+#a2,
+#a3,
+#a4,
+#a5,
+#a6,
+#a7,
+#a8,
+#a9,
+#a10,
+#a11,
+#a12,
+#a13,
+#a14,
+#a15,
+#a16,
+#a17,
+#a18 {
   display: inline;
 }
-#a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8,#a9,#a10,#a11,#a12,#a13 a{
+
+#a1,
+#a2,
+#a3,
+#a4,
+#a5,
+#a6,
+#a7,
+#a8,
+#a9,
+#a10,
+#a11,
+#a12,
+#a13,
+#a14,
+#a15,
+#a16,
+#a17,
+#a18 a {
   margin-left: 10px;
 }
 
-#tag-Grand-Est,#tag-Nouvelle-Aquitaine,#tag-Auvergne-Rhone-Alpes,
-#tag-Bourgogne-Franche-Comte,#tag-Bretagne,#tag-Centre-Val-de-Loire,
-#tag-Corse,#tag-Ile-de-France,#tag-Occitanie,#tag-Haut-de-France,#tag-Normandie,
-#tag-Pays-de-la-Loire,#tag-Provence-Alpes-Cote-dazur{
-  height:  15px;
+#tag-Grand-Est,
+#tag-Nouvelle-Aquitaine,
+#tag-Auvergne-Rhone-Alpes,
+#tag-Bourgogne-Franche-Comte,
+#tag-Bretagne,
+#tag-Centre-Val-de-Loire,
+#tag-Corse,
+#tag-Ile-de-France,
+#tag-Occitanie,
+#tag-Haut-de-France,
+#tag-Normandie,
+#tag-Pays-de-la-Loire,
+#tag-Provence-Alpes-Cote-dazur,
+#tag-Guadeloupe,
+#tag-Guyanne,
+#tag-Martinique,
+#tag-Mayotte,
+#tag-Réunion {
+  height: 15px;
   width: 15px;
   /* background-color: grey; */
   border: 3px solid white;
   float: left;
 }
 
+
 /* #tag-Nouvelle-Aquitaine{
-  height:  15px;
-  width: 15px;
-  background-color: red;
-  float: left;
+height:  15px;
+width: 15px;
+background-color: red;
+float: left;
 }
 #tag-Auvergne-Rhone-Alpes{
-  height:  15px;
-  width: 15px;
-  background-color: red;
-  float: left;
+height:  15px;
+width: 15px;
+background-color: red;
+float: left;
 } */
 
+
 /* Extrea */
+
+
 /* .a1:hover #tag-Grand-Est{
-  background-color: gray;
+background-color: gray;
 }
 .a2:hover #tag-Nouvelle-Aquitaine{
-  background-color: gray;
+background-color: gray;
 }
 .a3:hover #tag-Auvergne-Rhone-Alpes{
-  background-color: gray;
+background-color: gray;
 }
 .a4:hover #tag-Bourgogne-Franche-Comte{
-  background-color: gray;
+background-color: gray;
 }
 .a4:hover #tag-Bretagne{
-  background-color: gray;
+background-color: gray;
 } */
 
 
 /* .a1:hover .c{
-  background-color: gray;
+background-color: gray;
 } */
